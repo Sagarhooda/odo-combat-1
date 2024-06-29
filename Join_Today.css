@@ -1,0 +1,111 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+
+.form-container {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #395fc7;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #395fc7;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: #395fc7;
+}
+
+a:hover {
+    color: #395fc7;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 250px;
+    }
+    .form-container {
+        padding: 10px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type="text"], input[type="password"] {
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    button[type="submit"] {
+        height: 30px;
+    }
+}
